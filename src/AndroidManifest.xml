@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="liuriloami.pinnedtrips" >
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".database.DatabaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Material.Light">
+
+        <activity android:name=".activities.MainMenuActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MyPlacesActivity"
+            android:label="@string/title_activity_my_places" >
+        </activity>
+        <activity
+            android:name=".activities.MyItinerariesActivity"
+            android:label="@string/title_activity_my_itineraries" >
+        </activity>
+        <activity
+            android:name=".activities.PlaceEditorActivity"
+            android:label="@string/title_activity_place_editor" >
+        </activity>
+        <activity
+            android:name=".activities.NoteEditorActivity"
+            android:label="@string/title_activity_note_editor" >
+        </activity>
+        <activity
+            android:name=".activities.ItineraryEditorActivity"
+            android:label="@string/title_activity_itinerary_editor" >
+        </activity>
+        <activity
+            android:name=".activities.PlaceSelectorActivity"
+            android:label="@string/title_activity_place_selector" >
+        </activity>
+        <activity
+            android:name=".activities.ItineraryMapActivity"
+            android:label="@string/title_activity_itinerary_map" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

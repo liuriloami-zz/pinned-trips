@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="almost_white">#DFDFDF</color>
+    <color name="dropbox">#007ee5</color>
+    <color name="google_drive">#dc4e41</color>
+    <color name="almost_black">#333</color>
+    <color name="black">#000</color>
+</resources>

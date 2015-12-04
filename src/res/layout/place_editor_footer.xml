@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@android:style/Theme.Material">
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New note"
+        android:id="@+id/new_note_button"
+        android:layout_below="@id/notes_list"/>
+
+    <liuriloami.pinnedtrips.gallery.GalleryGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_note_button"
+        android:id="@+id/gallery_grid"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add media"
+        android:id="@+id/add_media_button"
+        android:layout_below="@id/gallery_grid"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="liuriloami.pinnedtrips.NoteEditorActivity"
+    android:touchscreenBlocksFocus="false"
+    android:theme="@android:style/Theme.Material">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_half_vertical_margin"
+        android:paddingRight="@dimen/activity_half_vertical_margin"
+        android:paddingTop="@dimen/activity_half_vertical_margin"
+        android:paddingBottom="@dimen/activity_half_vertical_margin"
+        android:id="@+id/note_title"
+        android:hint="What is the note title?"
+        android:layout_alignParentTop="true"
+        android:theme="@android:style/Theme.Material.Light"
+        android:background="@color/almost_white" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_half_vertical_margin"
+        android:paddingRight="@dimen/activity_half_vertical_margin"
+        android:paddingTop="@dimen/activity_half_vertical_margin"
+        android:paddingBottom="@dimen/activity_half_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:inputType="textMultiLine"
+        android:hint="Write your note here.."
+        android:id="@+id/note_text"
+        android:layout_below="@+id/note_title"
+        android:minLines="10"
+        android:theme="@android:style/Theme.Material.Light"
+        android:gravity="top"
+        android:background="@color/almost_white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save note"
+        android:id="@+id/save_note_button"
+        android:layout_below="@id/note_text" />
+</RelativeLayout>

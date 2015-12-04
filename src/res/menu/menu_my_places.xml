@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="liuriloami.pinnedtrips.MyPlaces">
+
+    <item android:id="@+id/add_place_button"
+        android:title="New Place"
+        android:showAsAction="ifRoom"/>
+</menu>
